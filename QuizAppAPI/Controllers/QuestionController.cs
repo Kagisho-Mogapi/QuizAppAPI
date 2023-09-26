@@ -28,7 +28,7 @@ namespace QuizAPI.Controllers
             var random5Qns = await (_context.Questions
                  .Select(x => new
                  {
-                     QnId = x.Id,
+                     Id = x.Id,
                      QnInWords = x.QnInWords,
                      ImageName = x.ImageName,
                      Options = new string[] { x.Option1, x.Option2, x.Option3, x.Option4 }
